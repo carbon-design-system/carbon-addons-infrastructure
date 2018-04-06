@@ -1,0 +1,34 @@
+{
+  "name": "carbon-addons-infrastructure",
+  "version": "0.1.0",
+  "repository": "git@github.com:carbon-design-system/carbon-addons-infrastructure.git",
+  "license": "Apache-2.0",
+  "scripts": {
+    "all-contributors": "all-contributors",
+    "ci-check": "yarn format:diff",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "all-contributors": "all-contributors",
+    "format": "prettier --write \"**/*.{scss,css,js,md,ts}\"",
+    "format:diff": "prettier --list-different \"**/*.{scss,css,js,md,ts}\"",
+    "precommit": "lint-staged"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^6.1.2",
+    "@commitlint/config-conventional": "^6.1.2",
+    "all-contributors-cli": "^4.11.1",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.10.2"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{scss,css,js,md}": [
+      "yarn format",
+      "git add"
+    ]
+  }
+}
