@@ -6,7 +6,11 @@
   "module": "es/index.js",
   "license": "Apache-2.0",
   "repository": "git@github.com:carbon-design-system/carbon-addons-infrastructure.git",
-  "files": ["es", "lib", "scss"],
+  "files": [
+    "es",
+    "lib",
+    "scss"
+  ],
   "scripts": {
     "all-contributors": "all-contributors",
     "build": "node scripts/build.js",
@@ -20,12 +24,14 @@
     "storybook": "start-storybook -p 3000",
     "test": "jest"
   },
+  "peerDependencies": {
+    "carbon-components": "^8.18.3",
+    "carbon-components-react": "^5.41.1",
+    "react": "^15.3.2 || ^16.2.0",
+    "react-dom": "^15.3.2 || ^16.2.0"
+  },
   "dependencies": {
     "prop-types": "^15.6.1"
-  },
-  "peerDependencies": {
-    "carbon-components-react": "5.x",
-    "react": "15.x || 16.x"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-beta.44",
@@ -68,6 +74,7 @@
     "react-dom": "^16.3.1",
     "rimraf": "^2.6.2",
     "sass-loader": "^6.0.7",
+    "semantic-release": "^15.1.5",
     "style-loader": "^0.20.3",
     "whatwg-fetch": "^2.0.4"
   },
