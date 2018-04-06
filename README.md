@@ -25,10 +25,10 @@ To include Infrastructure-related styles in your project, add the following to y
 
 ```scss
 // Default import path relative to `node_modules`
-@import "carbon-addons-infrastructure/scss/index.scss";
+@import 'carbon-addons-infrastructure/scss/index.scss';
 
 // If you're using webpack, you can use `~` to alias a node module
-@import "~carbon-addons-infrastructure/scss/index.scss";
+@import '~carbon-addons-infrastructure/scss/index.scss';
 ```
 
 #### `node-sass`
