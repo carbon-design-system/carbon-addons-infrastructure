@@ -1,5 +1,7 @@
 # carbon-addons-infrastructure
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/carbon-design-system/carbon-addons-infrastructure.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/carbon-design-system/carbon-addons-infrastructure.svg?branch=master)](https://travis-ci.org/carbon-design-system/carbon-addons-infrastructure)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
