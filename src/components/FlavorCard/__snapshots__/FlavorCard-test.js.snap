@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlavorCard should render 1`] = `
+<FlavorCardContainer
+  groupName="foo"
+>
+  <fieldset
+    className="flavorCard__container"
+  >
+    <FlavorCard
+      flavor="Single: Intel Xeon E3-1270 v3"
+      groupName="foo"
+      price="$25.21 monthly"
+      value="1"
+    >
+      <div>
+        <input
+          hidden={true}
+          id="1"
+          name="foo"
+          type="radio"
+          value="1"
+        />
+        <label
+          className="bx--card flavorCard"
+          htmlFor="1"
+        >
+          <p
+            className="flavorCard__title"
+          >
+            Single: Intel Xeon E3-1270 v3
+          </p>
+          <ul
+            className="flavorCard__details"
+          >
+            <FlavorCardBar
+              count="4"
+              percent="4/32"
+              unit="Cores"
+            >
+              <li
+                className="flavorCard__bar"
+                style={
+                  Object {
+                    "background": "linear-gradient(90deg, #c0e6ff calc(4/32 * 100%), #e6f5ff calc(4/32 * 100%), #e6f5ff)",
+                  }
+                }
+              >
+                <strong>
+                  4
+                </strong>
+                 
+                Cores
+              </li>
+            </FlavorCardBar>
+          </ul>
+          <p
+            className="flavorCard__price"
+          >
+            $25.21 monthly
+          </p>
+        </label>
+      </div>
+    </FlavorCard>
+  </fieldset>
+</FlavorCardContainer>
+`;

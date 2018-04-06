@@ -1,0 +1,215 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OrderSummary should render 1`] = `
+<OrderSummary>
+  <section
+    className="infra--order-summary"
+  >
+    <OrderSummarySection>
+      <div
+        className="infra--order-summary-section"
+      >
+        <h3>
+          Order Summary
+        </h3>
+      </div>
+    </OrderSummarySection>
+    <OrderSummarySection>
+      <div
+        className="infra--order-summary-section"
+      >
+        <OrderSummaryTree>
+          <div
+            className="infra--order-summary-tree"
+          >
+            <OrderSummaryItem
+              cost="$760.00/mo"
+              name="Virtual Server"
+            >
+              <div
+                className="infra--order-summary-item"
+              >
+                <p
+                  className="infra--order-summary-item__overview"
+                >
+                  <span
+                    className="infra--order-summary-item__name"
+                  >
+                     
+                    Virtual Server
+                  </span>
+                  <span
+                    className="infra--order-summary-item__cost"
+                  >
+                    $760.00/mo
+                  </span>
+                </p>
+                <div
+                  className="infra--order-summary-item__children"
+                >
+                  <OrderSummaryItem
+                    cost="$0.00/mo"
+                    key=".0"
+                    name="Network Interface"
+                  >
+                    <div
+                      className="infra--order-summary-item"
+                    >
+                      <p
+                        className="infra--order-summary-item__overview"
+                      >
+                        <span
+                          className="infra--order-summary-item__name"
+                        >
+                           
+                          Network Interface
+                        </span>
+                        <span
+                          className="infra--order-summary-item__cost"
+                        >
+                          $0.00/mo
+                        </span>
+                      </p>
+                      <div
+                        className="infra--order-summary-item__children"
+                      />
+                    </div>
+                  </OrderSummaryItem>
+                </div>
+              </div>
+            </OrderSummaryItem>
+          </div>
+        </OrderSummaryTree>
+      </div>
+    </OrderSummarySection>
+    <OrderSummarySection>
+      <div
+        className="infra--order-summary-section"
+      >
+        <OrderSummaryTotal
+          cost="760.00"
+          costNote="estimated"
+          text="Total due monthly"
+          textNote="*based on average usage"
+        >
+          <p
+            className="infra--order-summary-total"
+            data-type="total"
+          >
+            <span
+              className="infra--order-summary-total__text"
+            >
+              Total due monthly
+               
+              <span
+                className="infra--order-summary-total__note"
+              >
+                *based on average usage
+              </span>
+            </span>
+            <span
+              className="infra--order-summary-total__cost"
+            >
+              760.00
+               
+              <span
+                className="infra--order-summary-total__note"
+              >
+                estimated
+              </span>
+            </span>
+          </p>
+        </OrderSummaryTotal>
+      </div>
+    </OrderSummarySection>
+    <OrderSummarySection>
+      <div
+        className="infra--order-summary-section"
+      >
+        <OrderSummaryAgreement>
+          <Checkbox
+            className="infra--order-summary-agreement"
+            defaultChecked={true}
+            id="checkbox-label-1"
+            indeterminate={false}
+            labelText={
+              Array [
+                <p>
+                  I have read and agree to the Third-Party Service Agreements listed below:
+                </p>,
+                <p>
+                  <Link
+                    href="#"
+                  >
+                    3rd Party Software Terms CentOS
+                  </Link>
+                </p>,
+              ]
+            }
+            onChange={[Function]}
+          >
+            <div
+              className="bx--form-item bx--checkbox-wrapper"
+            >
+              <input
+                className="bx--checkbox"
+                defaultChecked={true}
+                id="checkbox-label-1"
+                onChange={[Function]}
+                type="checkbox"
+              />
+              <label
+                className="bx--checkbox-label infra--order-summary-agreement"
+                htmlFor="checkbox-label-1"
+              >
+                <span
+                  className=""
+                >
+                  <p>
+                    I have read and agree to the Third-Party Service Agreements listed below:
+                  </p>
+                  <p>
+                    <Link
+                      href="#"
+                    >
+                      <a
+                        className="bx--link"
+                        href="#"
+                      >
+                        3rd Party Software Terms CentOS
+                      </a>
+                    </Link>
+                  </p>
+                </span>
+              </label>
+            </div>
+          </Checkbox>
+        </OrderSummaryAgreement>
+      </div>
+    </OrderSummarySection>
+    <OrderSummarySection>
+      <div
+        className="infra--order-summary-section"
+      >
+        <Button
+          disabled={false}
+          iconDescription="Provide icon description if icon is used"
+          kind="primary"
+          small={false}
+          tabIndex={0}
+          type="button"
+        >
+          <button
+            className="bx--btn bx--btn--primary"
+            disabled={false}
+            tabIndex={0}
+            type="button"
+          >
+            Provision
+          </button>
+        </Button>
+      </div>
+    </OrderSummarySection>
+  </section>
+</OrderSummary>
+`;

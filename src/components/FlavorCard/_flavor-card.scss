@@ -1,19 +1,19 @@
-@import "carbon-components/scss/globals/scss/colors";
-@import "carbon-components/scss/globals/scss/mixins";
-@import "carbon-components/scss/components/dropdown/dropdown";
+@import 'carbon-components/scss/globals/scss/colors';
+@import 'carbon-components/scss/globals/scss/mixins';
+@import 'carbon-components/scss/components/dropdown/dropdown';
 
-@include exports("flavorCard") {
+@include exports('flavorCard') {
   .flavorCard__container > * {
     float: left;
     margin-right: 1rem;
   }
 
   .flavorCard__container input:checked + .flavorCard {
-    @include focus-outline("border");
+    @include focus-outline('border');
   }
 
   .flavorCard {
-    font-family: "IBM Plex Sans";
+    font-family: 'IBM Plex Sans';
     padding: 1.25rem 0.875rem;
     width: 12.5rem;
     height: auto;

@@ -1,8 +1,8 @@
-@import "carbon-components/scss/globals/scss/colors";
-@import "carbon-components/scss/globals/scss/mixins";
-@import "carbon-components/scss/components/select/_select.scss";
+@import 'carbon-components/scss/globals/scss/colors';
+@import 'carbon-components/scss/globals/scss/mixins';
+@import 'carbon-components/scss/components/select/_select.scss';
 
-@include exports("customSelect") {
+@include exports('customSelect') {
   .infra--custom-select__container {
     & > div {
       display: inline;

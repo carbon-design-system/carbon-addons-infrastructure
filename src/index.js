@@ -1,10 +1,10 @@
-export { CustomSelect, CustomSelectContainer } from "./components/CustomSelect";
+export { CustomSelect, CustomSelectContainer } from './components/CustomSelect';
 
 export {
   FlavorCard,
   FlavorCardBar,
-  FlavorCardContainer
-} from "./components/FlavorCard";
+  FlavorCardContainer,
+} from './components/FlavorCard';
 
 export {
   OrderSummary,
@@ -14,5 +14,5 @@ export {
   OrderSummaryItemDetail,
   OrderSummaryTotal,
   OrderSummaryPromo,
-  OrderSummaryAgreement
-} from "./components/OrderSummary";
+  OrderSummaryAgreement,
+} from './components/OrderSummary';

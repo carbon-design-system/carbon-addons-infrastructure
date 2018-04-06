@@ -1,17 +1,17 @@
 /* eslint-disable no-console */
 
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 import {
   Button,
   Dropdown,
   DropdownItem,
-  SelectItem
-} from "carbon-components-react";
-import { CustomSelect, CustomSelectContainer } from "../CustomSelect";
+  SelectItem,
+} from 'carbon-components-react';
+import { CustomSelect, CustomSelectContainer } from '../CustomSelect';
 
-storiesOf("Custom Select", module).addWithInfo(
-  "Group",
+storiesOf('Custom Select', module).addWithInfo(
+  'Group',
   `
       This component is used to display the items a user will be purchasing. This version does not include OrderSummaryCategory.
     `,
@@ -22,8 +22,7 @@ storiesOf("Custom Select", module).addWithInfo(
         icon=""
         value="1"
         groupName="customselect"
-        className="selected"
-      >
+        className="selected">
         <svg data-icon fillRule="evenodd" viewBox="0 0 128 128">
           <g>
             <path
