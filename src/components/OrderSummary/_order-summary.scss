@@ -1,0 +1,174 @@
+@import "carbon-components/scss/globals/scss/colors";
+@import "carbon-components/scss/globals/scss/mixins";
+
+.infra--order-summary {
+  padding: 1.25rem;
+  background-color: $ui-01;
+  width: 22.5rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+
+  &-section {
+    margin: 0.25rem 0;
+  }
+
+  &-tree {
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0.75rem;
+    margin-top: 0.5rem;
+    border-top: 1px solid $ui-03;
+    border-bottom: 1px solid $ui-03;
+  }
+
+  &-item {
+    position: relative;
+  }
+
+  &-item__children {
+    padding: 0 0 0 1.5rem;
+    overflow-y: hidden;
+  }
+
+  &-item__overview {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: $text-02;
+    font-weight: 600;
+    // background-color: $ui-01;
+    margin-bottom: 0.25rem;
+  }
+
+  &-item__name {
+    font-size: 0.875rem;
+    white-space: nowrap;
+  }
+
+  &-item__icon {
+    max-height: 1rem;
+    max-width: 1rem;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  &-item__cost {
+    font-size: 0.75rem;
+  }
+
+  &-item__detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: $text-03;
+    margin-bottom: 0.25rem;
+  }
+
+  &-item__detail-text {
+    font-size: 0.75rem;
+  }
+
+  &-item__detail-cost {
+    font-size: 0.75rem;
+  }
+
+  &-item__children &-item::after {
+    // Vertical bars of the tree structure
+    content: "";
+    position: absolute;
+    left: -1rem;
+    bottom: calc(100% - 0.5rem);
+    top: -12rem;
+    width: 3px;
+    background-color: $ui-04;
+  }
+
+  &-item__children &-item::before {
+    // Horizontal bars of the tree structure
+    content: "";
+    position: absolute;
+    left: -1rem;
+    top: calc(0.5rem);
+    height: 3px;
+    width: 0.75rem;
+    background-color: $ui-04;
+  }
+
+  &-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    color: $text-01;
+    font-size: 0.875rem;
+    margin-bottom: 0.125rem;
+    font-weight: 600;
+  }
+
+  &-total[data-type="subtotal"] {
+    font-size: 0.75rem;
+    color: $text-02;
+    font-weight: 400;
+  }
+
+  &-total__note {
+    display: block;
+    font-size: 0.75rem;
+    color: $text-02;
+    font-weight: 400;
+  }
+
+  &-promo__dropdown {
+    border: none;
+
+    &:last-child {
+      border: none;
+    }
+
+    .bx--accordion__heading {
+      margin-left: -0.25rem;
+    }
+
+    .bx--accordion__arrow {
+      // margin-left: 0;
+    }
+
+    .bx--accordion__title {
+      font-size: 0.75rem;
+      margin-left: 0.5rem;
+      padding-top: 2px;
+    }
+
+    .bx--accordion__content {
+      padding: 0;
+      display: flex;
+    }
+
+    .bx--btn {
+      margin-left: 1rem;
+      width: auto;
+    }
+  }
+
+  &-agreement::before {
+    top: 3px;
+  }
+
+  &-agreement::after {
+    top: 12px;
+  }
+
+  &-agreement p {
+    font-size: 0.75rem;
+    color: $text-03;
+    margin-bottom: 0.5rem;
+  }
+
+  &-agreement a {
+    font-size: 0.75rem;
+  }
+
+  & button {
+    width: 100%;
+  }
+}

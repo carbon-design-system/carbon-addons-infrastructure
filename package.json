@@ -7,7 +7,6 @@
     "all-contributors": "all-contributors",
     "ci-check": "yarn format:diff",
     "commitmsg": "commitlint -e $GIT_PARAMS",
-    "all-contributors": "all-contributors",
     "format": "prettier --write \"**/*.{scss,css,js,md,ts}\"",
     "format:diff": "prettier --list-different \"**/*.{scss,css,js,md,ts}\"",
     "precommit": "lint-staged"
