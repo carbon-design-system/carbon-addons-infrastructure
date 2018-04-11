@@ -1,18 +1,18 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import classNames from "classnames";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
 import {
   Button,
   Checkbox,
   TextInput,
   Accordion,
-  AccordionItem
-} from "carbon-components-react";
+  AccordionItem,
+} from 'carbon-components-react';
 
 export class OrderSummary extends Component {
   render() {
     const { children, className, ...other } = this.props;
-    const classes = classNames("infra--order-summary", className);
+    const classes = classNames('infra--order-summary', className);
 
     return (
       <section className={classes} {...other}>
@@ -25,7 +25,7 @@ export class OrderSummary extends Component {
 export class OrderSummarySection extends Component {
   render() {
     const { children, className, ...other } = this.props;
-    const classes = classNames("infra--order-summary-section", className);
+    const classes = classNames('infra--order-summary-section', className);
 
     return (
       <div className={classes} {...other}>
@@ -38,7 +38,7 @@ export class OrderSummarySection extends Component {
 export class OrderSummaryTree extends Component {
   render() {
     const { children, className, ...other } = this.props;
-    const classes = classNames("infra--order-summary-tree", className);
+    const classes = classNames('infra--order-summary-tree', className);
 
     return (
       <div className={classes} {...other}>
@@ -52,14 +52,14 @@ export class OrderSummaryItem extends Component {
   constructor(props) {
     super();
     this.itemIcon = React.Children.map(props.children, child => {
-      if (child.props["data-icon"]) {
+      if (child.props['data-icon']) {
         return React.cloneElement(child, {
-          className: "infra--order-summary-item__icon"
+          className: 'infra--order-summary-item__icon',
         });
       }
     });
     this.filteredChildren = React.Children.map(props.children, child => {
-      if (child.props["data-icon"]) {
+      if (child.props['data-icon']) {
         //Verify it matches the slot we are looking for.
         return null; // Clone it and set it to the slotted child
       } else {
@@ -72,7 +72,7 @@ export class OrderSummaryItem extends Component {
     const { name, cost, className, ...other } = this.props;
     const itemIcon = this.itemIcon;
     const children = this.filteredChildren;
-    const classes = classNames("infra--order-summary-item", className);
+    const classes = classNames('infra--order-summary-item', className);
 
     return (
       <div className={classes} {...other}>
@@ -91,7 +91,7 @@ export class OrderSummaryItem extends Component {
 export class OrderSummaryItemDetail extends Component {
   render() {
     const { text, cost, children, className, ...other } = this.props;
-    const classes = classNames("infra--order-summary-item", className);
+    const classes = classNames('infra--order-summary-item', className);
 
     return (
       <p className="infra--order-summary-item__detail">
@@ -116,13 +116,13 @@ export class OrderSummaryTotal extends Component {
     } = this.props;
 
     return (
-      <p className="infra--order-summary-total" data-type={type || "total"}>
+      <p className="infra--order-summary-total" data-type={type || 'total'}>
         <span className="infra--order-summary-total__text">
-          {text}{" "}
+          {text}{' '}
           <span className="infra--order-summary-total__note">{textNote}</span>
         </span>
         <span className="infra--order-summary-total__cost">
-          {cost}{" "}
+          {cost}{' '}
           <span className="infra--order-summary-total__note">{costNote}</span>
         </span>
       </p>
@@ -138,8 +138,7 @@ export class OrderSummaryPromo extends Component {
       <Accordion className="infra--order-summary-promo">
         <AccordionItem
           title="Apply promo code"
-          className="infra--order-summary-promo__dropdown"
-        >
+          className="infra--order-summary-promo__dropdown">
           <TextInput
             id=""
             labelText="Promo Code"

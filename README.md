@@ -1,9 +1,8 @@
 # carbon-addons-infrastructure
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/carbon-design-system/carbon-addons-infrastructure.svg)](https://greenkeeper.io/)
-
 [![Build Status](https://travis-ci.org/carbon-design-system/carbon-addons-infrastructure.svg?branch=master)](https://travis-ci.org/carbon-design-system/carbon-addons-infrastructure)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
+[![Greenkeeper badge](https://badges.greenkeeper.io/carbon-design-system/carbon-addons-infrastructure.svg)](https://greenkeeper.io/)
 
 > [WIP] Carbon Add-on for IBM Cloud Infrastructure
 
@@ -27,10 +26,10 @@ To include Infrastructure-related styles in your project, add the following to y
 
 ```scss
 // Default import path relative to `node_modules`
-@import "carbon-addons-infrastructure/scss/index.scss";
+@import 'carbon-addons-infrastructure/scss/index.scss';
 
 // If you're using webpack, you can use `~` to alias a node module
-@import "~carbon-addons-infrastructure/scss/index.scss";
+@import '~carbon-addons-infrastructure/scss/index.scss';
 ```
 
 #### `node-sass`

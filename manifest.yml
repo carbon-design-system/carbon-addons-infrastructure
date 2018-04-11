@@ -1,0 +1,8 @@
+---
+applications:
+- name: carbon-addons-infrastructure-storybook
+  memory: 64M
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  routes:
+  - route: carbon-addons-infrastructure-storybook.mybluemix.net
+  - route: infrastructure.carbondesignsystem.com

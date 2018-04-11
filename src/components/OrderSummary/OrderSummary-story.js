@@ -1,14 +1,14 @@
 /* eslint-disable no-console */
 
-import React from "react";
-import { storiesOf } from "@storybook/react";
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 import {
   Button,
   Link,
   TextInput,
   Accordion,
-  AccordionItem
-} from "carbon-components-react";
+  AccordionItem,
+} from 'carbon-components-react';
 import {
   OrderSummary,
   OrderSummarySection,
@@ -17,12 +17,12 @@ import {
   OrderSummaryItemDetail,
   OrderSummaryTotal,
   OrderSummaryPromo,
-  OrderSummaryAgreement
-} from "../OrderSummary";
+  OrderSummaryAgreement,
+} from '../OrderSummary';
 
-storiesOf("OrderSummary", module)
+storiesOf('OrderSummary', module)
   .addWithInfo(
-    "Basic",
+    'Basic',
     `
       This component is used to display the items a user will be purchasing. The category version of OrderSummary can break the items being purchased into categories.
     `,
@@ -65,7 +65,7 @@ storiesOf("OrderSummary", module)
     )
   )
   .addWithInfo(
-    "Promo Code",
+    'Promo Code',
     `
         This component is used to display the items a user will be purchasing. The category version of OrderSummary can break the items being purchased into categories.
       `,

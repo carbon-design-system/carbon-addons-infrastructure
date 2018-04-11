@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import classNames from "classnames";
-import { Link } from "carbon-components-react";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import { Link } from 'carbon-components-react';
 
 export class FlavorCardContainer extends Component {
   static propTypes = {
     children: PropTypes.node,
-    selected: PropTypes.string
+    selected: PropTypes.string,
   };
 
   render() {
@@ -23,12 +23,12 @@ export class FlavorCard extends Component {
     value: PropTypes.string,
     groupName: PropTypes.string,
     children: PropTypes.node,
-    className: PropTypes.string
+    className: PropTypes.string,
   };
 
   static defaultProps = {
-    flavor: "",
-    price: ""
+    flavor: '',
+    price: '',
   };
 
   render() {
@@ -59,19 +59,19 @@ export class FlavorCardBar extends Component {
   static propTypes = {
     count: PropTypes.string,
     unit: PropTypes.string,
-    percent: PropTypes.string
+    percent: PropTypes.string,
   };
 
   static defaultProps = {
-    count: "Order Summary",
-    unit: "GB Ram",
-    percent: 0
+    count: 'Order Summary',
+    unit: 'GB Ram',
+    percent: 0,
   };
 
   render() {
     const { count, unit, percent, ...other } = this.props;
     const computedStyles = {
-      background: `linear-gradient(90deg, #c0e6ff calc(${percent} * 100%), #e6f5ff calc(${percent} * 100%), #e6f5ff)`
+      background: `linear-gradient(90deg, #c0e6ff calc(${percent} * 100%), #e6f5ff calc(${percent} * 100%), #e6f5ff)`,
     };
 
     return (

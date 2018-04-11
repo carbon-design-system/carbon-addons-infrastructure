@@ -21,3 +21,20 @@ script:
   - yarn ci-check
 
 after_script: greenkeeper-lockfile-upload
+
+after_success:
+  - yarn semantic-release
+
+before_deploy:
+  - yarn build:storybook
+
+deploy:
+  skip_cleanup: true
+  provider: cloudfoundry
+  username: apikey
+  password: $CLOUD_API_KEY
+  api: https://api.ng.bluemix.net
+  organization: $CLOUD_ORG
+  space: $CLOUD_SPACE
+  on:
+    branch: master

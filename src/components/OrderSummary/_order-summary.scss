@@ -1,5 +1,5 @@
-@import "carbon-components/scss/globals/scss/colors";
-@import "carbon-components/scss/globals/scss/mixins";
+@import 'carbon-components/scss/globals/scss/colors';
+@import 'carbon-components/scss/globals/scss/mixins';
 
 .infra--order-summary {
   padding: 1.25rem;
@@ -75,7 +75,7 @@
 
   &-item__children &-item::after {
     // Vertical bars of the tree structure
-    content: "";
+    content: '';
     position: absolute;
     left: -1rem;
     bottom: calc(100% - 0.5rem);
@@ -86,7 +86,7 @@
 
   &-item__children &-item::before {
     // Horizontal bars of the tree structure
-    content: "";
+    content: '';
     position: absolute;
     left: -1rem;
     top: calc(0.5rem);
@@ -105,7 +105,7 @@
     font-weight: 600;
   }
 
-  &-total[data-type="subtotal"] {
+  &-total[data-type='subtotal'] {
     font-size: 0.75rem;
     color: $text-02;
     font-weight: 400;

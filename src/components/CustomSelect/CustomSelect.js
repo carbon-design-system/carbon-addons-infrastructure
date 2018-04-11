@@ -1,7 +1,7 @@
-import React, { Component } from "react";
-import PropTypes from "prop-types";
-import classNames from "classnames";
-import { Select, SelectItem } from "carbon-components-react";
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import classNames from 'classnames';
+import { Select, SelectItem } from 'carbon-components-react';
 
 export class CustomSelectContainer extends Component {
   render() {
@@ -20,20 +20,20 @@ export class CustomSelect extends Component {
     value: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
     icon: PropTypes.node,
-    children: PropTypes.node
+    children: PropTypes.node,
   };
 
   constructor(props) {
     super();
     this.itemIcon = React.Children.map(props.children, child => {
-      if (child.props["data-icon"]) {
+      if (child.props['data-icon']) {
         return React.cloneElement(child, {
-          className: "infra--custom-optgroup__icon"
+          className: 'infra--custom-optgroup__icon',
         });
       }
     });
     this.filteredChildren = React.Children.map(props.children, child => {
-      if (child.props["data-icon"]) {
+      if (child.props['data-icon']) {
         //Verify it matches the slot we are looking for.
         return null; // Clone it and set it to the slotted child
       } else {
@@ -44,7 +44,7 @@ export class CustomSelect extends Component {
 
   render() {
     const { name, value, groupName, className } = this.props;
-    const classes = classNames("infra--custom-select", className);
+    const classes = classNames('infra--custom-select', className);
     const icon = this.itemIcon;
     const children = this.filteredChildren;
     return (
