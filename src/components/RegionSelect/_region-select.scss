@@ -1,0 +1,74 @@
+@import 'carbon-components/scss/globals/scss/colors';
+@import 'carbon-components/scss/globals/scss/mixins';
+@import 'carbon-components/scss/components/select/_select.scss';
+
+@include exports('regionSelect') {
+  .infra--region-select__container {
+    & > div {
+      display: inline;
+    }
+    input:checked + .region-select .region-select__icon-container {
+      box-shadow: inset 0 0 0 2px $brand-02;
+      // border-color: #c0e6ff;
+      // background-color: #e6f5ff;
+    }
+  }
+
+  .infra--region-select {
+    width: 12.5rem;
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-bottom: 1rem;
+
+    & + .region-select {
+      margin-left: 1rem;
+    }
+
+    &__icon-container {
+      width: 3.125rem;
+      height: 3.125rem;
+      padding: 0.5rem;
+      margin: 0 0.25rem 0 0;
+      border-radius: 100%;
+      box-shadow: inset 0 0 0 3px $ui-03;
+      background-color: $ui-01;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    &.selected &__icon-container {
+      box-shadow: inset 0 0 0 2px $brand-02;
+      // border-color: #c0e6ff;
+      // background-color: #e6f5ff;
+    }
+
+    &__icon {
+    }
+
+    &__select-container {
+      flex: 1;
+      padding: 0 0 0.25rem 0.325rem;
+    }
+
+    &__label {
+      display: block;
+      font-size: 0.875rem;
+      font-weight: 700;
+      margin-bottom: 0.125rem;
+      color: $text-02;
+    }
+
+    &__select {
+      display: block;
+    }
+
+    &__select .bx--select-input {
+      padding: 0.25rem 0 0;
+    }
+
+    &__select .bx--select__arrow {
+      top: 0.75rem;
+    }
+  }
+}

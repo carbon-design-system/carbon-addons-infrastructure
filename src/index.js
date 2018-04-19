@@ -16,3 +16,5 @@ export {
   OrderSummaryPromo,
   OrderSummaryAgreement,
 } from './components/OrderSummary';
+
+export { RegionSelect, RegionSelectContainer } from './components/CustomSelect';
