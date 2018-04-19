@@ -76,7 +76,7 @@
     "rimraf": "^2.6.2",
     "sass-loader": "^6.0.7",
     "semantic-release": "^15.1.5",
-    "style-loader": "^0.20.3",
+    "style-loader": "^0.21.0",
     "whatwg-fetch": "^2.0.4"
   },
   "commitlint": {
