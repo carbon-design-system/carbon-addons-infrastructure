@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import { Select, SelectItem } from 'carbon-components-react';
+import { Select, SelectItem, RadioTile } from 'carbon-components-react';
 
-export class RegionSelectContainer extends Component {
+export class RegionSelect extends Component {
   render() {
     const { children } = this.props;
 
@@ -11,7 +11,7 @@ export class RegionSelectContainer extends Component {
   }
 }
 
-export class RegionSelect extends Component {
+export class RegionSelectGroup extends Component {
   static propTypes = {
     value: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
@@ -44,18 +44,19 @@ export class RegionSelect extends Component {
     const icon = this.itemIcon;
     const children = this.filteredChildren;
     return (
-      <div>
-        <input type="radio" hidden id={value} name={groupName} value={value} />
-        <label className={classes} htmlFor={value}>
-          <div className="infra--region-select__icon-container">{icon}</div>
-          <div className="infra--region-select__select-container">
-            <label className="infra--region-select__label">{name}</label>
-            <Select inline hideLabel className="infra--region-select__select">
-              {children}
-            </Select>
-          </div>
-        </label>
-      </div>
+      <RadioTile
+        id={value}
+        name={groupName}
+        htmlFor={value}
+        className={classes}>
+        <div className="infra--region-select__icon-container">{icon}</div>
+        <div className="infra--region-select__select-container">
+          <label className="infra--region-select__label">{name}</label>
+          <Select inline hideLabel className="infra--region-select__select">
+            {children}
+          </Select>
+        </div>
+      </RadioTile>
     );
   }
 }
