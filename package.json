@@ -26,8 +26,8 @@
     "test": "jest"
   },
   "peerDependencies": {
-    "carbon-components": "^8.18.3",
-    "carbon-components-react": "^5.41.1",
+    "carbon-components": "^9.0.0",
+    "carbon-components-react": "^6.0.0",
     "react": "^15.3.2 || ^16.2.0",
     "react-dom": "^15.3.2 || ^16.2.0"
   },
@@ -92,9 +92,14 @@
   },
   "babel": {
     "presets": [
-      "./scripts/env.js",
-      "@babel/preset-stage-1",
-      "@babel/preset-react"
+      "./scripts/env",
+      "@babel/preset-react",
+      [
+        "@babel/preset-stage-1",
+        {
+          "decoratorsLegacy": true
+        }
+      ]
     ]
   },
   "prettier": {
