@@ -14,8 +14,13 @@ const babelOptions = {
         },
       },
     ],
-    '@babel/preset-stage-1',
     '@babel/preset-react',
+    [
+      '@babel/preset-stage-1',
+      {
+        decoratorsLegacy: true,
+      },
+    ],
   ],
   // Adding in here otherwise Jest complains about no plugin for class
   // properties
