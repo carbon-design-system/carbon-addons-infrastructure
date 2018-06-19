@@ -7,6 +7,7 @@
         "targets": {
           "browsers": [
             "last 1 version",
+            "Firefox ESR",
             "ie >= 11"
           ]
         }
