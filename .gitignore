@@ -1,9 +1,9 @@
 # Ignore generated folders
-node_modules
-es
-lib
-umd
-scss
+/node_modules
+/es
+/lib
+/umd
+/scss
 storybook-static
 
 # Logs
