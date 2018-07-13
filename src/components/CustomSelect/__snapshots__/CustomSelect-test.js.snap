@@ -39,7 +39,10 @@ exports[`CustomSelect should render 1`] = `
               hideLabel={true}
               iconDescription="open list of options"
               inline={true}
+              invalid={false}
+              invalidText=""
               labelText="Select"
+              light={false}
             >
               <div
                 className="bx--form-item"
@@ -47,14 +50,9 @@ exports[`CustomSelect should render 1`] = `
                 <div
                   className="bx--select bx--select--inline infra--custom-select__select"
                 >
-                  <label
-                    className="bx--label bx--visually-hidden"
-                  >
-                    Select
-                  </label>
                   <select
+                    aria-describedby="undefined-error-msg"
                     className="bx--select-input"
-                    disabled={false}
                   >
                     <SelectItem
                       disabled={false}
@@ -93,7 +91,29 @@ exports[`CustomSelect should render 1`] = `
                     className="bx--select__arrow"
                     description="open list of options"
                     fillRule="evenodd"
-                    name="caret--down"
+                    icon={
+                      Object {
+                        "height": "5",
+                        "id": "icon--caret--down",
+                        "name": "icon--caret--down",
+                        "styles": "",
+                        "svgData": Object {
+                          "circles": "",
+                          "ellipses": "",
+                          "paths": Array [
+                            Object {
+                              "d": "M0 0l5 4.998L10 0z",
+                            },
+                          ],
+                          "polygons": "",
+                          "polylines": "",
+                          "rects": "",
+                        },
+                        "tags": "icon--caret--down",
+                        "viewBox": "0 0 10 5",
+                        "width": "10",
+                      }
+                    }
                     role="img"
                   >
                     <svg
@@ -102,7 +122,6 @@ exports[`CustomSelect should render 1`] = `
                       className="bx--select__arrow"
                       fillRule="evenodd"
                       height="5"
-                      name="caret--down"
                       role="img"
                       viewBox="0 0 10 5"
                       width="10"
@@ -111,11 +130,16 @@ exports[`CustomSelect should render 1`] = `
                         open list of options
                       </title>
                       <path
-                        d="M10 0L5 5 0 0z"
+                        d="M0 0l5 4.998L10 0z"
                         key="key0"
                       />
                     </svg>
                   </Icon>
+                  <label
+                    className="bx--label bx--visually-hidden"
+                  >
+                    Select
+                  </label>
                 </div>
               </div>
             </Select>
