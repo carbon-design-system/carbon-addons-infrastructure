@@ -161,6 +161,7 @@ exports[`OrderSummary should render 1`] = `
               <label
                 className="bx--checkbox-label infra--order-summary-agreement"
                 htmlFor="checkbox-label-1"
+                title={null}
               >
                 <span
                   className=""
