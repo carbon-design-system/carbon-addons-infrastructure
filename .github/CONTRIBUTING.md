@@ -2,13 +2,13 @@
 
 Want to contribute to this repository? Please read below first:
 
-* [Issues and Bugs](#issues-and-bugs)
-* [Feature Requests](#feature-requests)
-* [Doc Fixes](#doc-fixes)
-* [Submission Guidelines](#submission-guidelines)
-* [Coding Standards](#coding-standards)
-* [Commit Message Guidelines](#commit-message-guidlines)
-* [Testing](#testing)
+- [Issues and Bugs](#issues-and-bugs)
+- [Feature Requests](#feature-requests)
+- [Doc Fixes](#doc-fixes)
+- [Submission Guidelines](#submission-guidelines)
+- [Coding Standards](#coding-standards)
+- [Commit Message Guidelines](#commit-message-guidlines)
+- [Testing](#testing)
 
 ## Issues and Bugs
 
@@ -129,31 +129,31 @@ If you add any features to our code, make sure to add tests so that your changes
 
 Test your changes by running our test commands:
 
-* Run linting:
+- Run linting:
 
   ```
   yarn lint
   ```
 
-* Run unit tests:
+- Run unit tests:
 
   ```
   yarn test
   ```
 
-* Run both linting and unit tests:
+- Run both linting and unit tests:
 
   ```
   yarn ci-check
   ```
 
-* Watching unit tests:
+- Watching unit tests:
 
   ```
   yarn test --watch
   ```
 
-* Generate code coverage report (stored in `.gh-pages/coverage` folder):
+- Generate code coverage report (stored in `.gh-pages/coverage` folder):
 
   ```
   yarn test --coverage
