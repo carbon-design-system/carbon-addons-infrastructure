@@ -1,0 +1,15 @@
+@import 'carbon-components/scss/globals/scss/import-once';
+@import 'carbon-components/scss/globals/scss/typography';
+
+@include exports('infra-selectable-card') {
+  .bx--card.infra--selectable-card {
+    position: relative;
+  }
+
+  .infra--selectable-card-group {
+    & > .bx--card {
+      display: inline-block;
+      margin: rem(16px);
+    }
+  }
+}

@@ -1,0 +1,55 @@
+@import 'carbon-components/scss/globals/scss/colors';
+@import 'carbon-components/scss/globals/scss/typography';
+@import 'carbon-components/scss/globals/scss/vars';
+@import '../../globals/scss/colors';
+@import '../../globals/scss/layout';
+
+@include exports('infra-popular-size') {
+  .infra--popular-size-card {
+    height: auto;
+
+    &__card-overview {
+      height: auto;
+      flex: 1;
+      flex-direction: column;
+      padding: rem(4px) rem(16px);
+    }
+  }
+
+  .infra--popular-size-item--container {
+    background-color: $infra__popular-size-background-color;
+    border: 1px solid transparent;
+
+    .bx--tile--is-selected & {
+      background-color: $infra__popular-size-background-color-selected;
+      border-color: $infra__popular-size-color;
+    }
+  }
+
+  .infra--popular-size-item--container {
+    margin: rem(4px) 0;
+    position: relative;
+  }
+
+  .infra--popular-size-item--bar {
+    background-color: $infra__popular-size-color;
+    height: 2.5rem;
+    position: absolute;
+    z-index: zInfra(popularSizeItemBar);
+  }
+
+  .infra--popular-size-item--text {
+    color: $infra__popular-size-text-color;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 2.5rem;
+    left: 0;
+    padding: 0.5rem 0.5rem 0.5rem;
+    position: relative;
+    text-align: left;
+    top: 0;
+    z-index: zInfra(popularSizeItemText);
+    align-items: center;
+  }
+}
