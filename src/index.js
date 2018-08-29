@@ -25,3 +25,8 @@ export {
   SelectableCardGroup,
   default as SelectableCard,
 } from './components/SelectableCard';
+
+export {
+  InstanceMonitoringCard,
+  InstanceMonitoringMetric,
+} from './components/InstanceMonitoringCard';

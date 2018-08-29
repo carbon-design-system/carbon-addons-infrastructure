@@ -1,0 +1,54 @@
+@import 'carbon-components/scss/globals/scss/colors';
+@import 'carbon-components/scss/globals/scss/typography';
+@import 'carbon-components/scss/globals/scss/vars';
+
+.infra--instance-card {
+  background-color: $ui-01;
+  width: 100%;
+  height: rem(210px);
+
+  .infra--instance-metrics {
+    display: flex;
+    justify-content: center;
+    li {
+      padding: rem(20px);
+      margin: rem(20px);
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 600;
+
+      .infra--instance-amount {
+        font-size: 2.25rem;
+        padding-right: rem(5px);
+      }
+      .infra--instance-unit {
+        font-size: 0.875rem;
+      }
+      .infra--instance-desc {
+        font-size: 1rem;
+      }
+    }
+  }
+  .infra--instance-hide {
+    display: flex;
+    margin-top: rem(20px);
+    hr {
+      width: 100%;
+      margin: auto;
+      border-top: none;
+      border-bottom: 2px solid $ui-03;
+    }
+    .infra--instance-hide-link {
+      color: $ui-03;
+      width: 30%;
+      text-align: center;
+      font-weight: 600;
+      cursor: pointer;
+
+      .chevron-icon {
+        fill: $ui-03;
+        width: 20%;
+      }
+    }
+  }
+}
