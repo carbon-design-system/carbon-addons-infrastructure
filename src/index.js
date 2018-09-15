@@ -29,4 +29,4 @@ export {
 export {
   InstanceMonitoringCard,
   InstanceMonitoringMetric,
-} from './components/InstanceMonitoringCard';
+} from './components/InstanceMonitoring';
