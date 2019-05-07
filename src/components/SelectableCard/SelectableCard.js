@@ -86,7 +86,7 @@ export default class SelectableCard extends Component {
     );
 
     return (
-      <label htmlFor={id} className={classes}>
+      <label htmlFor={id} className={classes} tabIndex="0">
         <input
           {...other}
           type="radio"
